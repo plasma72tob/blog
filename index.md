@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+Статьи, новости, полезная информация для операторов
 
-Maybe say a some things about yourself.
+Режимы резки, настройки станков.
 
-Or maybe what you plan to blog about.
+Чертежи для резки в формате DXF, интересные проекты.
