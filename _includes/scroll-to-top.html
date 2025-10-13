@@ -1,0 +1,30 @@
+<!-- Плавающая кнопка "Наверх" точно как на plasma72 -->
+<button id="scrollTopBtn" aria-label="Наверх">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+    <circle cx="24" cy="24" r="24" fill="#1863b8"/>
+    <path d="M16 28l8-8 8 8" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script>
+// Плавающая кнопка "Наверх" - точно как на plasma72
+(function() {
+  const scrollBtn = document.getElementById('scrollTopBtn');
+  
+  if (scrollBtn) {
+    // Показываем/скрываем кнопку при прокрутке
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+    });
+
+    // Обработчик клика - плавная прокрутка наверх
+    scrollBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+})();
+</script>

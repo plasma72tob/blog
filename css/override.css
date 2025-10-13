@@ -227,3 +227,63 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+/* Плавающая кнопка "Наверх" - точно как на plasma72 */
+#scrollTopBtn {
+  display: none !important;
+  position: fixed !important;
+  right: 32px !important;
+  bottom: 32px !important;
+  z-index: 1000 !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s !important;
+  box-shadow: 0 4px 16px rgba(24,99,184,0.22) !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+#scrollTopBtn.show {
+  display: block !important;
+  opacity: 0.8 !important;
+}
+
+#scrollTopBtn:hover {
+  opacity: 1 !important;
+}
+
+#scrollTopBtn:hover svg circle {
+  fill: #0f3975 !important;
+}
+
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 768px) {
+  #scrollTopBtn {
+    right: 20px !important;
+    bottom: 20px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  #scrollTopBtn svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #scrollTopBtn {
+    right: 15px !important;
+    bottom: 15px !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  #scrollTopBtn svg {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
