@@ -1,5 +1,5 @@
 title: "БЛОГ - Лазерная и плазменная резка мателла"
-author: "Отдел продаж ПЛАЗМА72"
+author: "ПЛАЗМА72"
 description: "Свяжитесь с нами для покупки станка с доставкой в любой город РФ и РБ. " # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
@@ -20,9 +20,20 @@ youtube_username: PLASMA_72
 #########################################################################################
 theme: "minima"
 
+# Локализация
+minima:
+  social_links:
+    - { platform: youtube, user_url: "https://www.youtube.com/channel/@PLASMA_72" }
+    - { platform: pinterest, user_url: "https://pinterest.com/plasma72" }
+
+# Переводы для темы
+translations:
+  posts: "Статьи"
+
 rss: rss
 
 kramdown:
+  input: GFM
   syntax_highlighter_opts:
     disable: true
     
@@ -37,6 +48,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
