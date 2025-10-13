@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Лазерная и плазменная резка металла"
+title: "БЛОГ. Лазерная и плазменная резка металла"
 sitemap:
   priority: 1.0
   changefreq: weekly
