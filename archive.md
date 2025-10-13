@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Архив
+sitemap:
+  priority: 0.7
+  changefreq: monthly
 ---
 
 {% for tag in site.tags %}

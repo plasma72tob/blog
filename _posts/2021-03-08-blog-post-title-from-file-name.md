@@ -1,4 +1,11 @@
-## Blog 123 Post Title From First Header
+---
+layout: post
+title: "Введение в плазменную резку металла"
+date: 2021-03-08
+categories: основы плазма
+---
+
+# Введение в плазменную резку металла
 
 Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
 

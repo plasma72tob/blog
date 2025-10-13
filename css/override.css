@@ -3,6 +3,190 @@ hr {
   margin-bottom: 20px;
 }
 
+/* Header with black background like plasma72 */
+.site-header {
+  background: #111 !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  padding: 0.5rem 3rem !important;
+}
+
+.site-header .wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  color: #fff !important;
+  margin-right: auto;
+}
+
+.site-title:visited {
+  color: #fff !important;
+}
+
+.site-title .logo {
+  height: 80px;
+  margin-right: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.site-title .logo:hover {
+  transform: scale(1.05);
+}
+
+.site-nav {
+  position: static !important;
+  background: transparent !important;
+  border: none !important;
+  text-align: right !important;
+}
+
+.site-nav .trigger {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.site-nav .page-link {
+  margin-left: 1.8rem !important;
+  color: #fff !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  display: inline !important;
+  padding: 0 !important;
+}
+
+.site-nav .page-link:hover {
+  color: #ffcc00 !important;
+  text-decoration: none;
+}
+
+.site-nav .page-link[href^="tel:"] {
+  color: #ffcc00 !important;
+  font-weight: 600;
+  margin-left: 2rem !important;
+}
+
+/* Mobile navigation with black background */
+@media screen and (max-width: 768px) {
+  .site-header {
+    padding: 0.5rem 1rem !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  .site-header .wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .site-title .logo {
+    height: 60px;
+  }
+  
+  .site-nav .trigger {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+  }
+  
+  .site-nav .page-link {
+    margin-left: 0.5rem !important;
+    font-size: 0.9rem;
+  }
+  
+  .site-nav .page-link[href^="tel:"] {
+    margin-left: 0.5rem !important;
+    background: #ffcc00;
+    color: #111 !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute !important;
+    top: 9px;
+    right: 15px;
+    background-color: #111 !important;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: right !important;
+  }
+
+  .site-nav .trigger {
+    clear: both;
+    display: none !important;
+    flex-direction: column !important;
+  }
+
+  .site-nav:hover .trigger {
+    display: block !important;
+    padding-bottom: 5px;
+  }
+
+  .site-nav .page-link {
+    display: block !important;
+    padding: 8px 15px !important;
+    margin-left: 0 !important;
+    color: #fff !important;
+  }
+
+  .site-nav .page-link:hover {
+    color: #ffcc00 !important;
+    background-color: #222;
+  }
+
+  .menu-icon {
+    fill: #fff !important;
+  }
+}
+
+/* Additional mobile improvements */
+@media screen and (max-width: 480px) {
+  .site-title .logo {
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  .site-title {
+    font-size: 1.2rem;
+  }
+  
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .post-list-heading {
+    font-size: 1.5rem;
+  }
+  
+  .post-link {
+    font-size: 1.2rem;
+  }
+  
+  .post-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .post-content h2 {
+    font-size: 1.4rem;
+  }
+  
+  .post-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
