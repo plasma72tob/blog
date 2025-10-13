@@ -1,0 +1,70 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chartGrad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chartGrad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffc107;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffed4a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chartGrad3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f8f9fa"/>
+  
+  <!-- Chart background -->
+  <rect x="60" y="40" width="280" height="120" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- Grid lines -->
+  <line x1="60" y1="60" x2="340" y2="60" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="60" y1="80" x2="340" y2="80" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="60" y1="100" x2="340" y2="100" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="60" y1="120" x2="340" y2="120" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="60" y1="140" x2="340" y2="140" stroke="#e9ecef" stroke-width="1"/>
+  
+  <line x1="130" y1="40" x2="130" y2="160" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="200" y1="40" x2="200" y2="160" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="270" y1="40" x2="270" y2="160" stroke="#e9ecef" stroke-width="1"/>
+  
+  <!-- Bar charts -->
+  <rect x="80" y="90" width="30" height="70" fill="url(#chartGrad1)"/>
+  <rect x="120" y="70" width="30" height="90" fill="url(#chartGrad2)"/>
+  <rect x="160" y="100" width="30" height="60" fill="url(#chartGrad3)"/>
+  
+  <rect x="210" y="80" width="30" height="80" fill="url(#chartGrad1)"/>
+  <rect x="250" y="60" width="30" height="100" fill="url(#chartGrad2)"/>
+  <rect x="290" y="110" width="30" height="50" fill="url(#chartGrad3)"/>
+  
+  <!-- Axis labels -->
+  <text x="95" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Сталь</text>
+  <text x="135" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Алюм.</text>
+  <text x="175" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Нерж.</text>
+  
+  <text x="225" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">6мм</text>
+  <text x="265" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">10мм</text>
+  <text x="305" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">15мм</text>
+  
+  <!-- Y-axis labels -->
+  <text x="50" y="45" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">100А</text>
+  <text x="50" y="85" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">60А</text>
+  <text x="50" y="125" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">20А</text>
+  <text x="50" y="165" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">0А</text>
+  
+  <!-- Legend -->
+  <rect x="350" y="60" width="12" height="12" fill="url(#chartGrad1)"/>
+  <text x="370" y="70" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Оптимально</text>
+  
+  <rect x="350" y="80" width="12" height="12" fill="url(#chartGrad2)"/>
+  <text x="370" y="90" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Приемлемо</text>
+  
+  <rect x="350" y="100" width="12" height="12" fill="url(#chartGrad3)"/>
+  <text x="370" y="110" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Критично</text>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Параметры резки по материалам</text>
+</svg>

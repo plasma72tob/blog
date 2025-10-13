@@ -1,0 +1,66 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="qualityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="errorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c82333;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f8f9fa"/>
+  
+  <!-- Before/After comparison -->
+  <!-- Bad cut (left) -->
+  <rect x="50" y="70" width="80" height="40" fill="#C0C0C0" stroke="#808080" stroke-width="2"/>
+  <path d="M50 70 L130 70" stroke="url(#errorGrad)" stroke-width="4" opacity="0.8"/>
+  <path d="M50 110 L130 110" stroke="url(#errorGrad)" stroke-width="4" opacity="0.8"/>
+  <!-- Rough edges -->
+  <path d="M50 70 Q60 75 70 70 Q80 65 90 70 Q100 75 110 70 Q120 65 130 70" stroke="url(#errorGrad)" stroke-width="2" fill="none"/>
+  <path d="M50 110 Q60 105 70 110 Q80 115 90 110 Q100 105 110 110 Q120 115 130 110" stroke="url(#errorGrad)" stroke-width="2" fill="none"/>
+  
+  <!-- Arrow -->
+  <path d="M150 90 L200 90" stroke="#6c757d" stroke-width="3" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- Good cut (right) -->
+  <rect x="220" y="70" width="80" height="40" fill="#C0C0C0" stroke="#808080" stroke-width="2"/>
+  <path d="M220 70 L300 70" stroke="url(#qualityGrad)" stroke-width="3"/>
+  <path d="M220 110 L300 110" stroke="url(#qualityGrad)" stroke-width="3"/>
+  
+  <!-- Quality control tools -->
+  <!-- Magnifying glass -->
+  <circle cx="340" cy="80" r="15" fill="none" stroke="#6c757d" stroke-width="3"/>
+  <line x1="352" y1="92" x2="365" y2="105" stroke="#6c757d" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Measuring tool -->
+  <rect x="60" y="130" width="40" height="8" fill="#ffc107" stroke="#e0a800" stroke-width="1" rx="2"/>
+  <line x1="65" y1="130" x2="65" y2="125" stroke="#6c757d" stroke-width="1"/>
+  <line x1="75" y1="130" x2="75" y2="125" stroke="#6c757d" stroke-width="1"/>
+  <line x1="85" y1="130" x2="85" y2="125" stroke="#6c757d" stroke-width="1"/>
+  <line x1="95" y1="130" x2="95" y2="125" stroke="#6c757d" stroke-width="1"/>
+  
+  <!-- Quality marks -->
+  <circle cx="70" cy="50" r="8" fill="url(#errorGrad)"/>
+  <text x="70" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">✗</text>
+  
+  <circle cx="260" cy="50" r="8" fill="url(#qualityGrad)"/>
+  <text x="260" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">✓</text>
+  
+  <!-- Labels -->
+  <text x="90" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#dc3545">Дефекты</text>
+  <text x="260" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#28a745">Качество</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Контроль качества</text>
+  <text x="200" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Устранение дефектов</text>
+</svg>

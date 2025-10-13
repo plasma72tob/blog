@@ -1,0 +1,61 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="robotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007bff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0056b3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f8f9fa"/>
+  
+  <!-- Robotic arm base -->
+  <rect x="80" y="120" width="60" height="40" fill="url(#robotGrad)" stroke="#0056b3" stroke-width="2" rx="5"/>
+  
+  <!-- Robotic arm segments -->
+  <rect x="100" y="90" width="20" height="30" fill="url(#robotGrad)" stroke="#0056b3" stroke-width="2" rx="3"/>
+  <rect x="95" y="60" width="30" height="15" fill="url(#robotGrad)" stroke="#0056b3" stroke-width="2" rx="3"/>
+  <rect x="105" y="45" width="10" height="20" fill="url(#robotGrad)" stroke="#0056b3" stroke-width="2" rx="2"/>
+  
+  <!-- Plasma torch on robot -->
+  <rect x="108" y="35" width="4" height="12" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <circle cx="110" cy="32" r="3" fill="#e74c3c"/>
+  
+  <!-- Plasma beam -->
+  <path d="M110 35 L110 80" stroke="#00BFFF" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Workpiece -->
+  <rect x="70" y="80" width="80" height="20" fill="#C0C0C0" stroke="#808080" stroke-width="2"/>
+  
+  <!-- Control computer -->
+  <rect x="200" y="60" width="80" height="60" fill="#2c3e50" stroke="#34495e" stroke-width="2" rx="5"/>
+  <rect x="210" y="70" width="60" height="35" fill="#000" rx="3"/>
+  
+  <!-- Screen display -->
+  <text x="240" y="85" text-anchor="middle" font-family="monospace" font-size="8" fill="#00ff00">ЧПУ СИСТЕМА</text>
+  <text x="240" y="95" text-anchor="middle" font-family="monospace" font-size="8" fill="#00ff00">AUTO MODE</text>
+  
+  <!-- Control buttons -->
+  <circle cx="220" cy="135" r="4" fill="url(#screenGrad)"/>
+  <circle cx="235" cy="135" r="4" fill="#dc3545"/>
+  <circle cx="250" cy="135" r="4" fill="#ffc107"/>
+  <circle cx="265" cy="135" r="4" fill="url(#screenGrad)"/>
+  
+  <!-- Connection lines -->
+  <path d="M200 90 L150 90" stroke="#6c757d" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Gears/automation symbols -->
+  <circle cx="320" cy="70" r="15" fill="none" stroke="#6c757d" stroke-width="2"/>
+  <path d="M310 70 L330 70 M320 60 L320 80 M313 63 L327 77 M327 63 L313 77" stroke="#6c757d" stroke-width="2"/>
+  
+  <circle cx="350" cy="100" r="12" fill="none" stroke="#6c757d" stroke-width="2"/>
+  <path d="M342 100 L358 100 M350 92 L350 108 M345 95 L355 105 M355 95 L345 105" stroke="#6c757d" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="200" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Автоматизация процесса</text>
+  <text x="200" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">ЧПУ и роботизация</text>
+</svg>

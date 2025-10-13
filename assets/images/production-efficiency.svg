@@ -1,0 +1,73 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="efficiencyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#17a2b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#138496;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f8f9fa"/>
+  
+  <!-- Factory building -->
+  <rect x="50" y="100" width="120" height="60" fill="#6c757d" stroke="#495057" stroke-width="2"/>
+  <polygon points="50,100 110,70 170,100" fill="#343a40" stroke="#495057" stroke-width="2"/>
+  
+  <!-- Windows -->
+  <rect x="65" y="115" width="15" height="15" fill="#ffc107" stroke="#e0a800" stroke-width="1"/>
+  <rect x="90" y="115" width="15" height="15" fill="#ffc107" stroke="#e0a800" stroke-width="1"/>
+  <rect x="115" y="115" width="15" height="15" fill="#ffc107" stroke="#e0a800" stroke-width="1"/>
+  <rect x="140" y="115" width="15" height="15" fill="#ffc107" stroke="#e0a800" stroke-width="1"/>
+  
+  <!-- Door -->
+  <rect x="95" y="135" width="20" height="25" fill="#495057" stroke="#343a40" stroke-width="1"/>
+  
+  <!-- Conveyor belt -->
+  <rect x="180" y="140" width="100" height="20" fill="#343a40" stroke="#495057" stroke-width="2" rx="10"/>
+  
+  <!-- Products on conveyor -->
+  <rect x="190" y="135" width="12" height="10" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <rect x="210" y="135" width="12" height="10" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <rect x="230" y="135" width="12" height="10" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <rect x="250" y="135" width="12" height="10" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  
+  <!-- Robot arm -->
+  <rect x="300" y="120" width="40" height="20" fill="url(#efficiencyGrad)" stroke="#138496" stroke-width="2" rx="5"/>
+  <rect x="315" y="100" width="10" height="20" fill="url(#efficiencyGrad)" stroke="#138496" stroke-width="2" rx="2"/>
+  <circle cx="320" cy="95" r="5" fill="#e74c3c"/>
+  
+  <!-- Efficiency arrows -->
+  <path d="M50 80 Q100 60 150 80" stroke="#28a745" stroke-width="3" fill="none" marker-end="url(#greenArrow)"/>
+  <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#28a745">+35%</text>
+  
+  <path d="M200 80 Q250 60 300 80" stroke="#28a745" stroke-width="3" fill="none" marker-end="url(#greenArrow)"/>
+  <text x="250" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#28a745">+50%</text>
+  
+  <!-- Speed indicator -->
+  <circle cx="350" cy="100" r="20" fill="white" stroke="#6c757d" stroke-width="2"/>
+  <path d="M350 85 L350 100 L365 100" stroke="#28a745" stroke-width="3" stroke-linecap="round"/>
+  <text x="350" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">Скорость</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="greenArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#28a745"/>
+    </marker>
+  </defs>
+  
+  <!-- Stats boxes -->
+  <rect x="50" y="30" width="60" height="30" fill="white" stroke="#dee2e6" stroke-width="1" rx="5"/>
+  <text x="80" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#28a745">-40%</text>
+  <text x="80" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">Время</text>
+  
+  <rect x="120" y="30" width="60" height="30" fill="white" stroke="#dee2e6" stroke-width="1" rx="5"/>
+  <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#28a745">-25%</text>
+  <text x="150" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">Брак</text>
+  
+  <rect x="190" y="30" width="60" height="30" fill="white" stroke="#dee2e6" stroke-width="1" rx="5"/>
+  <text x="220" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc3545">+200%</text>
+  <text x="220" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">Затраты</text>
+  
+  <!-- Title -->
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Эффективность производства</text>
+</svg>

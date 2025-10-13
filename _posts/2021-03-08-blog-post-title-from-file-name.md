@@ -7,6 +7,9 @@ categories: основы плазма
 
 # Введение в плазменную резку металла
 
+![Плазменная резка металла](/assets/images/plasma-intro.svg)
+*Основы технологии плазменной резки металла*
+
 Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
 
 If the file does not start with a header, then the post title will be derived from the filename.
@@ -14,6 +17,9 @@ If the file does not start with a header, then the post title will be derived fr
 This is a sample blog post. You can talk about all sorts of fun things here.
 
 ---
+
+![Физика плазмы](/assets/images/plasma-physics.svg)
+*Физические процессы в плазме при резке*
 
 ### This is a header
 
